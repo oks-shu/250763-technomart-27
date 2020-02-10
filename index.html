@@ -46,37 +46,37 @@
   </div>
 </header>
 <main>
-<section>
-  <h1 class="hidden">Техномарт - интернет-магазин строительных материалов</h1>
-  <ul>
-    <li>
+<section class="main-menu">
+  <h1 class="visually-hidden">Техномарт - интернет-магазин строительных материалов</h1>
+  <ul class="main-menu-list">
+    <li class="yellow-back">
       <a href="">Материалы</a>
       <img src="img/icon-1.svg" width="44" height="65" alt="Ведро с краской">
       <p>На любой вкус</p>
     </li>
-    <li>
+    <li class="blue-back">
       <a href="">Инструмент</a>
       <img src="img/icon-2.svg" width="75" height="61" alt="Дрель">
       <p>На все случаи</p>
     </li>
-    <li>
+    <li class="pink-back">
       <a href="">Техника</a>
       <img src="img/icon-3.svg" width="78" height="62" alt="Трактор">
       <p>Для стройки</p>
     </li>
-    <li>
+    <li class="green-back">
       <a href="">Скидки 50%</a>
       <img src="img/icon-4.svg" width="59" height="72" alt="Корзина">
       <p>На 350 товаров</p>
     </li>
-    <li>
+    <li class="yellow-back">
       <a href="">Доставка</a>
       <img src="img/icon-5.svg" width="78" height="63" alt="Доставка">
       <p>Бесплатно</p>
     </li>
   </ul>
 </section>
-<figure>
+<figure class="main-slider">
   <figcaption>
     <h2>Дрели</h2>
     <p>Соседям на радость!</p>
@@ -84,7 +84,7 @@
   </figcaption>
   <a href=""><img src="img/slider-image.jpg" width="620" height="266" alt="Мужчина с дрелью"></a>
 </figure>
-<figure>
+<figure class="visually-hidden">
   <figcaption>
     <h2>Перфораторы</h2>
     <p>Настоящие мужские игрушки</p>
@@ -92,12 +92,12 @@
   </figcaption>
   <a href=""><img src="img/perforator-slider.jpg" width="620" height="266" alt="Мужчина с перфоратором"></a>
 </figure>
-<section>
+<section class="popular">
   <h2>Популярные товары</h2>
   <p><a href="">Все популярные товары</a></p>
 </section>
-<section>
-  <h2>Список популярных товаров</h2>
+<section class="catalog-list">
+  <h2 class="visually-hidden">Список популярных товаров</h2>
   <ul>
     <li>
       <h3>
@@ -105,8 +105,8 @@
       </h3>
       <a href=""><img src="img/item-image.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000"></a>
       <p>
-      <span>32500 Р.</span>
-      <a href="">25500 Р.</a>
+        <span class="old-price">32500 Р.</span>
+        <span class="price"><a href="">25500 Р.</a></span>
       </p>
     </li>
     <li>
@@ -115,8 +115,8 @@
       </h3>
       <a href=""><img src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000"></a>
       <p>
-      <span>22500 Р.</span>
-      <a href="">15500 Р.</a>
+        <span class="old-price">22500 Р.</span>
+        <span class="price"><a href="">15500 Р.</a></span>
       </p>
     </li>
     <li>
@@ -125,8 +125,8 @@
       </h3>
       <a href=""><img src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000"></a>
       <p>
-      <span>30500 Р.</span>
-      <a href="">25500 Р.</a>
+        <span class="old-price">30500 Р.</span>
+        <span class="price"><a href="">25500 Р.</a></span>
       </p>
     </li>
     <li>
@@ -135,16 +135,16 @@
       </h3>
       <a href=""><img src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000"></a>
       <p>
-      <a href="">12500 Р.</a>
+        <span class="price"><a href="">12500 Р.</a></span>
       </p>
     </li>
   </ul>
 </section>
-<section>
+<section class="popular">
   <h2>Популярные производители</h2>
   <p><a href="">Все производители</a></p>
 </section>
-<section>
+<section class="brands">
   <h2>Список производителей:</h2>
   <ul>
     <li><a href=""><img src="img/bosch.png" width="126" height="37" alt="Bosh"></a></li>
@@ -157,7 +157,7 @@
     <li><a href=""><img src="img/Metabo.png" width="204" height="69" alt="Metabo"></a></li>
   </ul>
 </section>
-<section>
+<section class="services">
   <h2>Сервисы</h2>
   <p>Хороший интернет-магазин отличается от плохого не только ценами!
     Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
@@ -167,20 +167,21 @@
     <li>Гарантия</li>
     <li>Кредит</li>
   </ul>
-  <h2>Доставка</h2>
+  <h2 class="services-h2">Доставка</h2>
   <p>Мы с удовольствием доставим ваш товар прямо 
     к вашему подъезду совершенно бесплатно!
     Ведь мы неплохо заработаем, 
     поднимая его на ваш этаж!</p>
   <img src="img/car.png" width="468" height="261" alt="Грузовик">
   </div>
+  <div class="visually-hidden">
   <div class="guarantee">
     <ul>
     <li>Доставка</li>
     <li>Гарантия</li>
     <li>Кредит</li>
   </ul>
-  <h2>Гарантия</h2>
+  <h2 class="services-h2">Гарантия</h2>
   <p>Если купленный у нас товар поломается или заискрит, 
     а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
     Дом уж восстановите как-нибудь сами.</p>
@@ -192,11 +193,12 @@
     <li>Гарантия</li>
     <li>Кредит</li>
   </ul>
-  <h2>Кредит</h2>
+  <h2 class="services-h2">Кредит</h2>
   <p>Залезть в долговую яму стало проще! 
     Кредитные консультанты придут вам на помощь.</p>
   <img src="img/credit.jpg" width="389" height="283" alt="Гарантия">
   </div>
+</div>
 </section>
 <section  class="main-company">
 <h2>Компания "Техномарт"</h2>

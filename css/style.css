@@ -237,3 +237,104 @@ a {
     text-align: center;
 }
 
+.main-menu-list a {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.main-menu-list p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+.yellow-back {
+    background-color: #ffbf47;
+}
+
+.blue-back {
+    background-color: #3bbce3;
+}
+
+.pink-back {
+    background-color: #dc91d8;
+}
+
+.green-back {
+    background-color: #8ed78f;
+}
+
+.main-slider h2 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.main-slider p {
+    font-size: 18px;
+    line-height: 1.33;
+    color: #ffffff;
+}
+
+.main-slider a {
+    font-size: 14px;
+    line-height: 1.29;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.popular {
+    background-color: #f9f5f0;
+}
+
+.popular h2 {
+    font-size: 30px;
+    line-height: 1;
+    color: #32425c;
+}
+
+.popular a {
+    font-size: 14px;
+    line-height: 1.29;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #ee3643;
+}
+
+.services {
+    background-color: #f4f7f9;
+}
+
+.services h2 {
+    font-size: 30px;
+    line-height: 1;
+    color: #000000;
+}
+
+.services p {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+.delivery .services-h2 {
+    font-size: 36px;
+    line-height: 1;
+    color: #32425c;
+}
+
+.text {
+    background-color: #f4f7f9;
+}
+
+.text h2 {
+    font-size: 30px;
+}
+
+.text p {
+    font-family: PTSans;
+    font-size: 13px;
+}
