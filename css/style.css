@@ -96,10 +96,14 @@ a {
 .site-navigation-2,
 .main-menu-list,
 .brands-catalog,
-.info-items
+.info-items,
+.filter-producer,
+.filter-battery,
+.catalog-list-2
 {
     list-style: none; 
-
+    padding: 0;
+    margin: 0;
 }
 
 .main-menu-list-horizontal {
@@ -339,9 +343,9 @@ a {
     color: #000000;
 }
 
-.filter {
-    width: 225px;
-    min-height: 750px;
+.filter-block {
+    width: 220px;
+    min-height: 745px;
 }
 
 .filter label {
@@ -366,7 +370,7 @@ a {
 }
 
 .catalog-colums {
-    display: flex
+    display: flex;
     justify-content: space-between;
 }
 
@@ -384,16 +388,14 @@ a {
 .catalog-list-2 {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
 }
 
 .catalog-list-2 li {
     border: 1px solid #eaeaea;
-    width: 220px;
+    width: 218px;
     min-height: 318px;
     margin-bottom: 21px;
-    margin-right: 21px;
+    margin-right: 20px;
 }
 
 .catalog-list-2 li:nth-child(3n) {
