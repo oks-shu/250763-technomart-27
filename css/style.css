@@ -19,6 +19,7 @@ body {
 .site-navigation .container {
     display: flex;
     justify-content: space-between;
+    align-items: center; 
 }
 
 .site-navigation {
@@ -32,6 +33,9 @@ body {
 
 .site-navigation-1 {
     display: flex;
+
+    text-align: center;
+    align-items: center; 
 }
 
 .site-navigation-1 a {
@@ -47,6 +51,16 @@ body {
 
 .site-navigation-2 li {
     margin: 0 10px;
+    position: relative;
+}
+
+.site-navigation-2 a:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+
+    background-color: #dc91d8;
 }
 
 .main-contacts {
@@ -80,7 +94,10 @@ a {
 
 .main-header-logo {
     width: 220px;
-    height: 42px;
+    height: 47px;
+
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    background-color: #ee3643;
 }
 
 .main-menu-container {
@@ -100,7 +117,7 @@ a {
 .info-items,
 .filter-producer,
 .filter-battery,
-.catalog-list-2
+.catalog-items
 {
     list-style: none; 
     padding: 0;
@@ -400,8 +417,7 @@ a {
     margin-right: 40px;
 }
 
-.breadcrumbs a,
-.catalog-list a {
+.breadcrumbs a {
     color: #000000;
 }
 
@@ -446,32 +462,116 @@ a {
     justify-content: space-between;
 }
 
-.catalog-list-2 {
+.catalog-items {
     display: flex;
     flex-wrap: wrap;
+
+    width: 700px;
+    margin: 20px auto;
 }
 
-.catalog-list-2 li {
-    border: 1px solid #eaeaea;
+.catalog-item {
+    position: relative;
+    display: inline-block;
     width: 218px;
-    min-height: 318px;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     margin-right: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ccc;
 }
 
-.catalog-list-2 li:nth-child(3n) {
+.catalog-item:nth-child(3n) {
     margin-right: 0px;
 }
 
-.catalog-list-2 h3 {
-    font-family: PTSans;
-    font-weight: bold;
-    line-height: 1.11;
-    text-align: center;
-    font-size: 18px;
+.catalog-item .flag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    
+    width: 60px;
+    height: 60px;
+    
+    text-indent: -1000px;
+    overflow: hidden;
+    z-index: 20;
+  }
+  
+.catalog-item .flag-new {
+    background: url("../img/new\ flag.png") no-repeat 0 0;
+  }
+
+.catalog-item .actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 218px;
+    height: 88px;
+    padding: 40px 0;
+
+    background-color: rgba(255,255,255,0.9);
+    z-index: 10;
 }
 
-.old-price,
+.catalog-item .actions .buy,
+.catalog-item .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+  
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-item .actions .bookmark {
+    color: #32425c;
+    background: white;
+    border-bottom-color: #63a63e;
+  }
+
+.catalog-item .actions {
+    display: none;
+  }
+  
+.catalog-item:hover .actions {
+    display: block;
+  }
+
+.catalog-item .image {
+    width: 218px;
+    height: 168px;
+}
+
+.catalog-item .image img {
+    max-width: 100%;
+  }
+
+.catalog-item .title {
+   min-height: 40px;
+   padding: 0 25px;
+   margin-top: 10px;
+   margin-bottom: 15px;
+   
+   font-size: 18px;
+   line-height: 1.11;
+}
+
+.discount,
 .price
 {
     font-family: PTSans;
@@ -481,18 +581,36 @@ a {
     text-align: center;
 }
 
-.old-price {
-    text-decoration: line-through;
+.catalog-item .discount {
+    min-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     color: #999999;
+    text-decoration: line-through;
 }
 
-.price {
-    background-image: url("../img/red-button.svg");
-    background-size: 141px 38px;
+.catalog-item .price {
+    position: relative;
+    width: 80px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    color: white;
+
+    background: #ee3643;
+    border-radius: 3px;
 }
 
-.price a {
-    color: #ffffff;
+.catalog-item .price::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+
+    border: 20px solid white;
+    border-left-color: #ee3643;
 }
 
 .pagination {
